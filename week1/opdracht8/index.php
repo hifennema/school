@@ -1,3 +1,13 @@
+<?php
+spl_autoload_register(function ($class_name) {
+   include "./classes/" . $class_name . ".php";
+});
+
+// Declaring variables
+$functions = new functions();
+$radius = 7;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,14 +18,11 @@
     <h1>Opdracht 8:</h1>
 
     <?php
-    // Setting the radius.
-    $radius = 7;
-
     // Calculating the circumference.
-    $circumference = 2 * 3.14 * $radius;
+    $circumference = $functions->calculateCircumference($radius);
 
     // Calculating the surface.
-    $surface = 3.14 * $radius * $radius;
+    $surface = $functions->calculateSurface($radius);
 
     // Showing the values.
     ?>

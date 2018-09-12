@@ -1,3 +1,7 @@
+<?php
+$x = 8;
+$y = 6;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,19 +10,15 @@
 </head>
 <body>
     <h1>Opdracht 11:</h1>
-
     <?php
-    // Determining the values.
-    $x = 8;
-    $y = 6;
-
     // Showing the values.
     ?>
+
     <label>De waarde van variabele x = <?php echo $x; ?>.</label><br />
     <label>De waarde van variabele y = <?php echo $y; ?>.</label><br />
     <label><b>MAGIC IS HAPPENING.</b></label><br />
-    <?php
 
+    <?php
     // Swapping the values.
     $array1 = [$x, $y];
     list($y, $x) = $array1;

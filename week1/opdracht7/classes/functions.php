@@ -29,7 +29,7 @@ class functions
         $replacedText = str_replace(" ", "--", $capitalWordText);
 
         // Adding all solutions to the array.
-        $sentences = ["removed" => $removedWordText, "trimmed" => $trimmedText, "capital" => $capitalWordText, "replaced" => $replacedText];
+        $sentences = ["removed" => $removedWordText, "trimmed" => $trimmedText, "capital" => $capitalWordText, "replaced" => $replacedText, "length" => strlen($replacedText)];
 
         // Returning the array.
         return $sentences;

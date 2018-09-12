@@ -24,10 +24,10 @@ $text = " wazig TV-filmpje rond chique skybox ";
 
     // Showing the text.
     ?>
-    <label><b>Basis tekst:</b> "<?php echo $text; ?>".</label><br />
+    <label><b>Basis tekst:</b> "<?php echo $text; ?>", verder heeft de basis tekst een lengte van: <?php echo strlen($text); ?>.</label><br />
     <label><b>Wazig is verwijderd:</b> "<?php echo $sentences["removed"]; ?>".</label><br />
     <label><b>Onnodige spaties getrimd:</b> "<?php echo $sentences["trimmed"]; ?>".</label><br />
     <label><b>Alle woorden starten met een hoofdletter:</b> "<?php echo $sentences["capital"]; ?>".</label><br />
-    <label><b>Alle spaties zijn vervangen met een dubbele streep:</b> "<?php echo $sentences["replaced"]; ?>".</label><br />
+    <label><b>Alle spaties zijn vervangen met een dubbele streep:</b> "<?php echo $sentences["replaced"]; ?>, verder heeft de nieuwe tekst een lengte van: <?php echo $sentences["length"]; ?>".</label><br />
 </body>
 </html>
