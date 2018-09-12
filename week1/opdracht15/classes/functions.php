@@ -40,7 +40,7 @@ class functions
             $dateChoice = $_POST["date-choice"];
 
         // Returning the choice.
-        return $dateChoice;
+        return (bool) $dateChoice;
     }
 
     /**
@@ -48,6 +48,7 @@ class functions
      * @return array|bool
      */
     public function getPersons($dateChoice) {
+        // Checking if the postvalue exists.
         if ($dateChoice)
             return ["date" => $dateChoice,"persons" => $this->persons[$dateChoice]];
 

@@ -27,6 +27,7 @@ $data = $functions->getPersons($functions->getPostValue());
         <input type="submit" value="Zoeken" />
     </form>
     <?php
+    // Checking if data exists.
     if ($data) {
         ?>
         <br />
@@ -35,6 +36,7 @@ $data = $functions->getPersons($functions->getPostValue());
                 <th>Geboren op <?php echo $data["date"]; ?></th>
             </tr>
             <?php
+            // Looping throught the persons data.
             foreach ($data["persons"] as $person) {
                 ?>
                 <tr>
