@@ -25,6 +25,6 @@ class functions {
         // Putting the important values in the array.
         $prices = ["profit" => $profit, "sales" => $salesPrice, "purchase" => $purchasePrice];
 
-        return $prices;
+        return (array) $prices;
     }
 }

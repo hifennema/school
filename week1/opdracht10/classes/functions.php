@@ -28,6 +28,6 @@ class functions
         $times = ["total" => $totalTime, "average" => round($averageTime, 2)];
 
         // Returning the array
-        return $times;
+        return (array) $times;
     }
 }

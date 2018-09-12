@@ -32,6 +32,6 @@ class functions
         $sentences = ["removed" => $removedWordText, "trimmed" => $trimmedText, "capital" => $capitalWordText, "replaced" => $replacedText, "length" => strlen($replacedText)];
 
         // Returning the array.
-        return $sentences;
+        return (array) $sentences;
     }
 }

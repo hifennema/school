@@ -1,4 +1,5 @@
 <?php
+// Declaring variables
 $x = 8;
 $y = 6;
 ?>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>School</title>
+    <title>Opdracht 1</title>
 </head>
 <body>
     <h1>Opdracht 1:</h1>

@@ -21,7 +21,7 @@ class functions
      * @return float|int
      */
     public function calculateCircumference($radius) {
-        return 2 * $this->pi * $radius;
+        return (float) 2 * $this->pi * $radius;
     }
 
     /**
@@ -29,6 +29,6 @@ class functions
      * @return float|int
      */
     public function calculateSurface($radius) {
-        return $this->pi * $radius * $radius;
+        return (float) $this->pi * $radius * $radius;
     }
 }

@@ -36,6 +36,6 @@ class functions
         $numbers = ["absolute" => $absoluteNumber, "multiplied" => $multipliedNumber, "squared" => $squaredNumber, "rounded" => $roundedNumber];
 
         // Returning the array.
-        return $numbers;
+        return (array) $numbers;
     }
 }

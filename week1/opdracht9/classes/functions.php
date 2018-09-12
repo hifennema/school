@@ -32,6 +32,6 @@ class functions
         $string = trim($string, ", ");
 
         // Returning the string.
-        return $string;
+        return (string) $string;
     }
 }
