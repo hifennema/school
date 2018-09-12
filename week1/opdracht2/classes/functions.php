@@ -15,10 +15,15 @@ class functions {
      * @return string
      */
     public function combineWords($words = []) {
+        // Declaring variable
         $sentence = "";
+
+        // Building the sentence.
         foreach ($words as $word){
             $sentence = $sentence . $word . " ";
         }
+
+        // Returning the trimmed sentence.
         return trim($sentence);
     }
 }

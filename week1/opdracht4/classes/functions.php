@@ -26,7 +26,7 @@ class functions {
         $five++;
 
         // Returning the new number.
-        return $five;
+        return (int) $five;
     }
 
     /**
@@ -37,7 +37,7 @@ class functions {
         $five = $this->five;
 
         //Returning 5 + 1.
-        return ++$five;
+        return (int) ++$five;
     }
 
     /**
@@ -48,6 +48,6 @@ class functions {
         $five = $this->five;
 
         //Returning 5 + 1.
-        return $five + 1;
+        return (int) $five + 1;
     }
 }

@@ -18,7 +18,7 @@ class functions
      */
     private function multiply($number, $multiplier) {
         // Calculating and returning the values.
-        return $number * $multiplier;
+        return (int) $number * $multiplier;
     }
 
     /**
@@ -36,6 +36,6 @@ class functions
         $numbers = ["absolute" => $absoluteNumber, "multiplied" => $multipliedNumber, "squared" => $squaredNumber, "rounded" => $roundedNumber];
 
         // Returning the array.
-        return $numbers;
+        return (array) $numbers;
     }
 }
