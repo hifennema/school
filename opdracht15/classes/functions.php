@@ -41,11 +41,16 @@ class functions
         return false;
     }
 
+    /**
+     * @return array
+     */
     public function getPersons() {
         $choice = $this->getPostValue();
+        $persons = [];
         if ($choice)
             $persons = $this->persons[$this->getPostValue()];
 
+        // Building array with personsdata.
         $data = [
             "date" => $choice,
             "persons" => $persons

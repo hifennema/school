@@ -3,8 +3,8 @@ spl_autoload_register(function ($class_name) {
     include "./classes/" . $class_name . ".php";
 });
 
-$function = new functions();
-$data = $function->getPersons();
+$functions = new functions();
+$data = $functions->getPersons();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,13 +20,13 @@ $data = $function->getPersons();
     <select name="fruit-choice">
         <option value="">Maak en keuze</option>
         <option value="09-06">9 juni</option>
-        <option value="08-11">11 november</option>
+        <option value="08-11">8 november</option>
     </select>
     <input type="submit" value="Toon Keuze" />
 </form>
 <br />
 <?php
-if ($data) {
+if ($data["date"] !== false) {
     ?>
     <table>
         <tr>
