@@ -13,6 +13,6 @@
     <label><b>Naam van het gebouw:</b> <?php echo $name; ?></label><br />
     <label><b>Adres:</b> <?php echo $address; ?></label><br />
     <label><b>Postcode:</b> <?php echo $postalCode; ?></label><br />
-    <label><b></b>Plaats:</b> <?php echo $place; ?></label><br />
+    <label><b>Plaats:</b> <?php echo $place; ?></label><br />
 </body>
 </html>
