@@ -4,9 +4,9 @@ spl_autoload_register(function ($class_name) {
 });
 
 // Declaring variables
-$function = new functions();
-$fruitChoice = $function->getPostValue();
-
+$functions = new functions();
+$fruitChoice = $functions->getPostValue();
+$sentence  = $functions->switchCases($fruitChoice);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,12 +35,13 @@ $fruitChoice = $function->getPostValue();
     if ($fruitChoice) {
         ?>
         <form action="#" method="post">
-            <label>Uw favoriete fruitsoort is een <?php echo $fruitChoice[0]; ?>!</label><br />
-            <label><?php echo $fruitChoice[1]; ?></label>
+            <label>Uw favoriete fruitsoort is een <?php echo $fruitChoice; ?>!</label><br />
             <input type="submit" value="Verwijder keuze" />
         </form>
         <?php
     }
     ?>
+    <h3>Een zin bij de <?php echo $sentence[0]; ?>:</h3>
+    <label><?php echo $sentence[1]; ?></label><br />
 </body>
 </html>
